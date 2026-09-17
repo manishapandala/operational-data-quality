@@ -1,0 +1,31 @@
+{
+  "scope": "deterministic generated-data validation",
+  "input_rows": 10000,
+  "output_rows": 9730,
+  "quality_before": 0.754,
+  "quality_after": 1.0,
+  "quality_lift_points": 24.6,
+  "issues_before": {
+    "amount:invalid_value": 527,
+    "customer:missing": 323,
+    "email:invalid_format": 589,
+    "event_date:invalid_date": 345,
+    "record_id:duplicate": 540,
+    "status:invalid_category": 435
+  },
+  "issues_after": {},
+  "audit": {
+    "input_rows": 10000,
+    "duplicates_removed": 270,
+    "repairs": {
+      "record_id": 0,
+      "customer": 315,
+      "email": 574,
+      "amount": 513,
+      "status": 424,
+      "event_date": 336
+    },
+    "output_rows": 9730
+  },
+  "runtime_seconds": 1.064
+}
