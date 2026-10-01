@@ -27,3 +27,12 @@ Outputs:
 - `cleaned_sample.csv` — 250 publishable generated records.
 
 The public metrics use deterministic generated data and validate pipeline behavior. They do not disclose employer data or claim production performance.
+
+## Engineering quality
+
+- validation is separate from mutation, and every repair is counted;
+- deterministic fixtures exercise both clean and defective records;
+- Ruff, bytecode compilation, and nine unit tests run in GitHub Actions;
+- the README and demo distinguish generated evidence from production claims.
+
+See [ENGINEERING.md](ENGINEERING.md) for architecture, verification, safe-change rules, and limitations.
